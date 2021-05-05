@@ -57,7 +57,7 @@ def plot_along_channel_overview(mpasdata, var, levels, label, time, nxc=4, cmap=
     # colorbar
     cax = plt.axes([0.77, 0.18, 0.15, 0.73])
     cax.set_visible(False)
-    cb = plt.colorbar(im, ax=cax, aspect=25)
+    cb = plt.colorbar(im, ax=cax, aspect=25, extend='both')
     cb.set_label(label)
     cb.ax.set_xticklabels(cb.ax.get_xticklabels(), rotation=40)
     cb.ax.xaxis.set_ticks_position('top')
