@@ -1,7 +1,7 @@
 import os
 import sys
 import xarray as xr
-sys.path.append(os.environ['HOME']+"/work/mpasview/")
+sys.path.append(os.environ['HOME']+"/local/mpasview/")
 from mpasview import *
 
 def idealized_estuary_along_channel(ds, varname, time=None, nxc=4):
